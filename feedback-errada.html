@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quiz sobre o SUS — Resposta Errada</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: #fff6e8;
+      font-family: "Poppins", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 28px;
+      margin: 0;
+      color: #111;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .title {
+      font-family: "Fredoka One", sans-serif;
+      font-size: 34px;
+      margin-bottom: 18px;
+    }
+
+    .question-box {
+      padding: 18px 14px;
+      border-radius: 14px;
+      border: 6px solid #222;
+      background: #fffefb;
+      margin-bottom: 20px;
+    }
+
+    .question-text {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .quiz-image {
+      display: flex;
+      justify-content: center;
+      margin: 18px 0;
+    }
+
+    .quiz-image img {
+      max-width: 220px;
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 0px 0px rgba(0,0,0,0.1);
+    }
+
+    .feedback-card {
+      width: 60%;
+      max-width: 500px;
+      height: 220px;
+      max-height: 350px;
+      border: 6px solid #222;
+      margin: 20px auto;
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .feedback-top {
+      flex: 1;
+      background: #d24e47;
+      color: #010101;
+      font-weight: 700;
+      font-size: 20px;
+      padding: 18px;
+      border-bottom: 3px solid #222;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .feedback-bottom {
+      flex: 2;
+      background: #fff6e8;
+      color: #111;
+      font-size: 16px;
+      padding: 18px;
+      font-family: "Fredoka One", sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .btn-next {
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      background: #007bff;
+      color: #fff;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <h1 class="title">Quiz sobre o SUS</h1>
+
+    <div class="question-box">
+      <p class="question-text">Você sabe o que significa o <strong>SUS</strong>?</p>
+    </div>
+
+    <div class="quiz-image">
+      <img src="sus.png.png" alt="Símbolo do SUS">
+    </div>
+
+    <div class="feedback-card">
+      <div class="feedback-top">
+         Resposta Errada
+      </div>
+      <div class="feedback-bottom">
+        SUS significa Sistema Único de Saúde. É o sistema público de saúde do Brasil, criado para garantir o acesso à saúde para toda a população de forma gratuita.
+      </div>
+    </div>
+
+    <button class="btn-next" onclick="window.location.href='index2.html'">Próxima pergunta</button>
+  </main>
+
+  <script>
+    
+    if (!localStorage.getItem('quizScore')) {
+      localStorage.setItem('quizScore', 0);
+    }
+  </script>
+</body>
+</html>
